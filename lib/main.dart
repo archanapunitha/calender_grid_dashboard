@@ -1,24 +1,9 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:calender_grid_dashboard/CalenderGridDashBoard.dart';
 
-void main() => runApp(MyApp());
-
-class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-    );
-  }
-}
+void main() => runApp(MyHomePage());
 
 class MyHomePage extends StatefulWidget {
   @override
@@ -64,7 +49,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 IconButton(
                   alignment: Alignment.topCenter,
-                    icon: SvgPicture.asset("assets/Icons/notification.svg",
+                    icon: SvgPicture.asset("assets/notification.svg",
                     height: 25.0,),
                     onPressed: (){
 

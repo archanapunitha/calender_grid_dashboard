@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-void main(){
-  runApp(CalenderGridDashBoard());
-}
-
 class CalenderGridDashBoard extends StatelessWidget {
 
   Items item1=new Items(
