@@ -1,7 +1,9 @@
 import 'dart:html';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:calender_grid_dashboard/CalenderGridDashBoard.dart';
 
 void main() => runApp(MyApp());
 
@@ -61,12 +63,19 @@ class _MyHomePageState extends State<MyHomePage> {
                   ],
                 ),
                 IconButton(
-                    icon: ,
+                  alignment: Alignment.topCenter,
+                    icon: SvgPicture.asset("assets/Icons/notification.svg",
+                    height: 25.0,),
+                    onPressed: (){
 
-                    onPressed: null)
+                    }),
               ],
             ),
-          )
+          ),
+          SizedBox(
+            height: 40.0,
+          ),
+          CalenderGridDashBoard(),
         ],
       )
     );
